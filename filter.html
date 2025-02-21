@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="./filter.css">
+<script src="./filter.js" defer></script>
+</head>
+<body>
+   <div id="container">
+    <div id="imgcontainer">
+        <img src="./photos/3.jpg" id="img">
+    </div>
+   
+   <div id="effects">
+        <h4>blur</h4>
+        <input type="range" value="0" min="0" max="10" id="blur" onchange=editImage()>
+        <h4>brightness</h4>
+        <input type="range" value="100" min="0" max="200" id="brightness" onchange="editImage()">
+        <h4>contrast</h4>
+        <input type="range" value="100" min="0" max="200" id="contrast" onchange="editImage()">
+        <h4>grayscale</h4>
+        <input type="range" value="0" min="0" max="100" id="grayscale" onchange="editImage()">
+        <h4>hue-rotate</h4>
+        <input type="range" value="0" min="0" max="360"  id="hue-rotate" onchange="editImage()">
+        <h4>invert</h4>
+        <input type="range" value="0" min="0" max="100" id="invert" onchange="editImage()">
+        <h4>opacity</h4>
+        <input type="range" value="100" min="0" max="100" id="opacity" onchange="editImage()">
+        <h4>saturate</h4>
+        <input type="range" value="100" min="0" max="200" id="saturate" onchange="editImage()">
+        <h4>sepia</h4>
+        <input type="range" value="0" min="0" max="100" id="sepia" onchange="editImage()">
+   </div>
+
+   <div id="transform">
+      <h4>Rotate</h4>
+      <input type="range" id="rotate" value="0" min="0" max="360" onchange="applyTransform()">
+      
+      <h4>RotateX</h4>
+      <input type="range" id="rotateX" value="0" min="-180" max="180" onchange="applyTransform()">
+      
+      <h4>RotateY</h4>
+      <input type="range" id="rotateY" value="0" min="-180" max="180" onchange="applyTransform()">
+      
+      <h4>SkewX</h4>
+      <input type="range" id="skewX" value="0" min="-45" max="45" onchange="applyTransform()">
+      
+      <h4>SkewY</h4>
+      <input type="range" id="skewY" value="0" min="-45" max="45" onchange="applyTransform()">
+      
+      <h4>Scale</h4>
+      <input type="range" id="scale" value="1" min="0.1" max="3" step="0.1" onchange="applyTransform()">
+      
+      <h4>ScaleX</h4>
+      <input type="range" id="scaleX" value="1" min="0.1" max="3" step="0.1" onchange="applyTransform()">
+      
+      <h4>ScaleY</h4>
+      <input type="range" id="scaleY" value="1" min="0.1" max="3" step="0.1" onchange="applyTransform()">
+      
+      <h4>TranslateX</h4>
+      <input type="range" id="translateX" value="0" min="-200" max="200" step="1" onchange="applyTransform()">
+      
+      <h4>TranslateY</h4>
+      <input type="range" id="translateY" value="0" min="-200" max="200" step="1" onchange="applyTransform()">
+  </div>
+  
+</div>
+
+</body>
+</html>
